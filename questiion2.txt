@@ -1,0 +1,35 @@
+Question 2:-
+
+Part 1:- Building logistic regression from bid dataset( in short)
+
+1. Target variable
+  win( 1 if bid won , 0 otherwise)
+2. Feature selection 
+   bid_amount - this is choosen becoz higher bids are more likely to win
+   time_to_bid - low response time helps for better chances of winning
+   ad_unit - 
+  browser_name / os_name - how the ads served , might affect
+  size - ad size
+
+3. Preprocessing
+   1. encoding categorical variables using one-hot encoding
+   2. Handling missing data
+   3. Normalizing the numerical features
+
+4. Train/ Test split  - we can split the data by 80/20
+
+
+Part 2:
+
+
+1. bid_amount(0.8) - by increasing 1 unit in bid amount , winning increase by 0.8 
+ so, higher the bid , higher will be the chance of winning
+
+2. time_to_bid(-0.4)
+  by increasing 1 unit , winning decrease by 0.4
+  so , slower response , lower chance of winning
+
+3. ad_unit_A(0.3)
+   by using ad_unit_A increases by 0.3
+  so , ad_unit_A is better than ad_unit_B
+ 
